@@ -1,0 +1,85 @@
+
+<!-- saved from url=(0022)http://127.0.0.1:3000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title> Mario Jump </title>
+<link rel="stylesheet" href="./Mario Jump_files/style.css">
+<link rel="stylesheet" href="./Mario Jump_files/bootstrap.css">
+</head>
+
+<body>
+  <div class="container">
+<h1>vincent's Flappy Bird.</h1>
+<p>Welcome to the best flappy bird game there is!</p>
+<div class="row">
+  <div class="col-xs-8">
+  <div id="game"> <canvas width="790" height="400" style="display: block; touch-action: none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); cursor: inherit;"></canvas></div>
+  </div>
+
+
+  <div class="col-xs-4">
+
+    <div>
+<button type="button" class="btn btn-default" id="scoresbtn">Scores</button>
+<button type="button" class="btn btn-default" id="creditsbtn">Credits</button>
+<button type="button" class="btn btn-default" id="helpbtn">Help</button>
+</div>
+
+<div>
+<div id="content">
+</div>
+</div>
+</div>
+    </div>
+  <div class="row">
+  <div class="col-md-4">
+  <img src="./Mario Jump_files/screenshotStart.png" class="img-circle img-responsive">
+  </div>
+  <div class="col-md-4">
+  <img src="./Mario Jump_files/screenshot.png" class="img-rounded img-responsive">
+  </div>
+  <div class="col-md-4">
+  <img src="./Mario Jump_files/screenshotOver.png" class="img-thumbnail img-responsive">
+  </div>
+
+
+
+  </div>
+  <script type="text/javascript" src="./Mario Jump_files/phaser.min.js.download"></script>
+  <script type="text/javascript" src="./Mario Jump_files/flappy.js.download"></script>
+  <script type="text/javascript" src="./Mario Jump_files/jquery.js.download"></script>
+  <script type="text/javascript" src="./Mario Jump_files/interactivity.js.download"></script>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+
+
+</div></body></html>

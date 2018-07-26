@@ -1,0 +1,17 @@
+h1 {
+color: darkblue;
+}
+.score {
+color: gray;
+}
+.gold {
+color: gold;
+}
+
+#gameLink {
+text-align: center;
+border: 1px solid gray;
+}
+body{
+ background-color: #4286f4;
+}
